@@ -11,7 +11,7 @@ const Projects: React.FC = () => {
       image: 'https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=800',
       tags: ['React', 'Three.js', 'TypeScript', 'WebGL'],
       category: 'frontend',
-      demoUrl: '#',
+      demoUrl: 'https://drive.google.com/file/d/1AHffFYFZj56WyA9VQE_j2ra9KvUD3TdR/view?usp=sharing',
       githubUrl: 'https://github.com/Kalagarla-Praveen/portfolio.git',
       featured: true,
       stats: { stars: 234, views: '12.5k', likes: 89 }
