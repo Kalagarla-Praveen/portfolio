@@ -37,38 +37,45 @@ const Header: React.FC<HeaderProps> = ({ activeSection }) => {
   const downloadResume = () => {
     // Create a sample resume download
     const resumeContent = `
-JOHN DOE - FULL STACK DEVELOPER
-================================
+    PRAVEEN KALAGARLA
++91 9490722065 ⋄ BHIMAVARAM,AP
+praveenkalagarla2005@gmail.com  ⋄Linkedin   GitHub
+OBJECTIVE
 
-CONTACT INFORMATION
-Email: john.doe@email.com
-Phone: +1 (555) 123-4567
-LinkedIn: linkedin.com/in/johndoe
-GitHub: github.com/johndoe
-
-SUMMARY
-Passionate Full Stack Developer with 5+ years of experience in creating innovative web applications and interactive experiences. Specialized in React, Node.js, and 3D web technologies.
-
-TECHNICAL SKILLS
-• Frontend: React, TypeScript, JavaScript, HTML5, CSS3, Tailwind CSS
-• Backend: Node.js, Express, Python, PHP
-• Databases: MongoDB, PostgreSQL, MySQL
-• 3D Graphics: Three.js, WebGL, Blender
-• Tools: Git, Docker, AWS, Figma
-
-EXPERIENCE
-Senior Full Stack Developer | Tech Company (2021-Present)
-• Developed 20+ responsive web applications using React and Node.js
-• Implemented 3D visualizations increasing user engagement by 40%
-• Led a team of 5 developers on multiple projects
-
+Aspiring Frontend Developer seeking a role or internship to apply skills in HTML, CSS, JavaScript, React.js, and responsive design. Committed to contributing to innovative web solutions and growing within a collaborative environment.
 EDUCATION
-Bachelor of Computer Science | University Name (2018)
 
-PROJECTS
-• Interactive 3D Portfolio - Personal portfolio with Three.js animations
-• E-commerce Platform - Full-stack application with payment integration
-• Data Visualization Dashboard - Real-time analytics with D3.js
+Bachelor of Technology - Artificial Intelligence And Machine Learning ,
+SRKR Engineering College , Bhimavaram, Andhra Pradesh	Expected 2026 Relevant Coursework: Data Structures, Artificial Intelligence, Machine Learning, Databases,
+Board of Intermediate Education, AP - MPC ,
+Sri Chaitanya Junior College , Vishakapatnam, Andhra Pradesh	2020 - 2022
+
+   SKILLS
+
+ TechnicalSkills   : HTML,CSS,JavaScript,Responsive,Bootstrap,React.js,Node.js,SQL,Github
+  Soft Skills           :Leadership, Event Management, Communication Skills
+
+  PROJECTS
+
+ Online Food Website     Developed using HTML, CSS, JavaScript, and responsive design.
+•	Developed a responsive food ordering platform with an intuitive and user-centric interface.
+•	Integrated dynamic content to enhance interactivity and improve user engagement.
+     National Hackathon Website   Developed using HTML, CSS, JavaScript and Responsive
+•	Designed a responsive and user-friendly platform for a national hackathon, ensuring seamless navigation and accessibility across devices.
+•	Enabled efficient event management with real-time updates, participant registration, and streamlined information access.
+     Wikipedia Search Application   Developed using HTML, CSS, JavaScript, and Wikipedia API.
+•	Created a dynamic application that allows users to search and retrieve Wikipedia articles with real-time suggestions.
+•	Designed an intuitive user interface to ensure seamless browsing, enhancing user experience.
+    Digital Timer Application  Developed using HTML, CSS, Responsive Design, and React.js.
+•	Designed and implemented a customizable digital timer with features to set, pause, and reset the timer.
+•	Ensured a responsive and intuitive user experience with a clean interface and seamless functionality across devices.
+     EXTRA-CURRICULAR ACTIVITIES
+      Executive Body Member (EBM)   Associative Computer Engineers Club
+•	Hosted and managed multiple events, promoting student engagement and collaboration.
+•	Developed leadership, organizational, and event management skills through active participation and strategic planning.
+
+
+
     `;
 
     const blob = new Blob([resumeContent], { type: 'text/plain' });
@@ -100,7 +107,7 @@ PROJECTS
               </div>
             </div>
             <span className="text-xl font-bold bg-gradient-to-r from-accent-400 to-orange-400 bg-clip-text text-transparent">
-              Your Portfolio
+              Portfolio
             </span>
           </div>
 
