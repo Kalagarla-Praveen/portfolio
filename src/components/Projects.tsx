@@ -12,7 +12,7 @@ const Projects: React.FC = () => {
       tags: ['React', 'Three.js', 'TypeScript', 'WebGL'],
       category: 'frontend',
       demoUrl: '#',
-      githubUrl: '#',
+      githubUrl: 'https://github.com/Kalagarla-Praveen/portfolio.git',
       featured: true,
       stats: { stars: 234, views: '12.5k', likes: 89 }
     },
