@@ -1,29 +1,37 @@
-# Eco AI Media Portfolio
 
-A modern, responsive portfolio website showcasing sustainable digital solutions and AI-powered innovations. Built with React, TypeScript, Tailwind CSS, and Three.js.
+# Portfolio Website
 
-## 🌟 Features
+## 🌐 Live Demo
+[https://portfolio-red-chi-87.vercel.app/](https://portfolio-red-chi-87.vercel.app/)
 
-- **Interactive 3D Hero Section**: Powered by Three.js with animated geometric shapes
-- **Responsive Design**: Optimized for all device sizes from mobile to desktop
-- **Sustainable Focus**: Eco-friendly design principles and green technology showcase
-- **Advanced Contact Form**: Comprehensive validation with real-time feedback
-- **Modern Animations**: Smooth transitions and micro-interactions
-- **Performance Optimized**: Fast loading with efficient asset management
-- **Accessibility**: WCAG compliant with proper contrast ratios and navigation
+## 📌 Overview
+This project is a responsive, single-page portfolio website built using **React**, **Vite**, and **Tailwind CSS**, with a mandatory **3D interactive model** integration. The site highlights professional skills, projects, and includes a functional contact form with validation.
 
-## 🚀 Technologies Used
+Designed and developed as part of the **Eco AI Media Internship Assignment**.
 
-- **Frontend**: React 18, TypeScript
-- **Styling**: Tailwind CSS with custom color system
-- **3D Graphics**: Three.js for interactive visualizations
-- **Icons**: Lucide React
-- **Build Tool**: Vite
-- **Development**: ESLint, Hot Module Replacement
+## 🛠️ Technologies Used
+
+- **Framework**: React + Vite
+- **Styling**: Tailwind CSS
+- **3D Rendering**: Three.js
+- **Form Validation**: Vanilla JavaScript with Regex
+- **Deployment**: Vercel
+
+## 🧩 Features
+
+- Fully responsive layout
+- Smooth scrolling navigation
+- 3D spinning cube in Hero section (Three.js)
+- About section with profile and intro
+- Projects section with screenshots and links
+- Contact form with validation
+- Clean, modern UI with consistent structure
+- Live deployed version
 
 ## 📁 Project Structure
 
 ```
+
 src/
 ├── components/
 │   ├── Header.tsx        # Navigation with scroll-based styling
@@ -33,164 +41,131 @@ src/
 │   ├── Contact.tsx       # Contact form with validation
 │   └── Footer.tsx        # Footer with social links
 ├── App.tsx               # Main application component
-├── main.tsx             # Application entry point
-└── index.css            # Global styles and Tailwind imports
-```
+├── main.tsx              # Application entry point
+└── index.css             # Global styles and Tailwind imports
 
-## 🎨 Design System
+````
 
-### Color Palette
-- **Primary**: Emerald green (#059669) for sustainability theme
-- **Secondary**: Sage green (#84CC16) for natural accents
-- **Neutral**: Gray scale for text and backgrounds
-- **Semantic**: Success, warning, and error states
+## 🎨 Website Sections
 
-### Typography
-- **Font**: Inter for modern, readable typography
-- **Hierarchy**: Clear heading structure with proper spacing
-- **Line Height**: 150% for body text, 120% for headings
+### ✨ Hero Section
+- Displays name, role, call-to-action button
+- Integrates an animated 3D cube (Three.js)
+- Provides strong visual impact on load
 
-### Spacing
-- **8px Grid System**: Consistent spacing throughout
-- **Responsive Breakpoints**: Mobile-first approach
-- **Container**: Max-width 7xl (1280px) with proper padding
+### 👤 About Section
+- Short personal introduction
+- Profile image
 
-## 🛠️ Installation & Setup
+### 💼 Projects Section
+- Showcases 2–3 sample projects with:
+  - Title
+  - Image
+  - Description
+  - GitHub/demo link
 
-1. **Clone the repository**
+### 📬 Contact Section
+- Contact form with:
+  - Name
+  - Email (with regex validation)
+  - Message
+- Displays error messages for invalid inputs
+
+## 🧪 3D Integration
+
+- **Library**: Three.js
+- **Implementation**: 
+  - A spinning cube rendered via WebGL inside the Hero section.
+  - OrbitControls included for user interaction (zoom/rotate).
+- **Responsiveness**: Canvas scales dynamically across devices.
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js (v16+ recommended)
+- npm
+
+### Installation & Development
+
+1. **Clone the repository:**
+
    ```bash
-   git clone <repository-url>
-   cd eco-ai-portfolio
-   ```
+   git clone https://github.com/kalagarla-Praveen/portfolio.git
+   cd portfolio
+````
 
-2. **Install dependencies**
+2. **Install dependencies:**
+
    ```bash
    npm install
    ```
 
-3. **Start development server**
+3. **Run the development server:**
+
    ```bash
    npm run dev
    ```
 
-4. **Build for production**
-   ```bash
-   npm run build
-   ```
+4. Open [http://localhost:5173](http://localhost:5173) in your browser.
 
-5. **Preview production build**
-   ```bash
-   npm run preview
-   ```
+### Build for production
 
-## 🎯 Key Components
+```bash
+npm run build
+```
 
-### Hero Section
-- Interactive 3D model using Three.js
-- Animated geometric shapes with orbital motion
-- Responsive design with proper aspect ratios
-- Call-to-action buttons with smooth scrolling
+### Preview the production build locally
 
-### Projects Showcase
-- Featured projects with detailed cards
-- Grid layout for additional projects
-- External links for demos and source code
-- Technology tags with consistent styling
+```bash
+npm run preview
+```
 
-### Contact Form
-- Comprehensive validation (name, email, subject, message)
-- Real-time error feedback
-- Success/error state handling
-- Professional styling with accessibility features
+## 🌍 Deployment
 
-### Navigation
-- Smooth scrolling between sections
-- Active section highlighting
-- Mobile-responsive hamburger menu
-- Scroll-based header styling
+* **Platform**: Vercel
+* **Live URL**: [https://portfolio-red-chi-87.vercel.app/](https://portfolio-red-chi-87.vercel.app/)
 
-## 🌱 Sustainability Features
+## 🧪 Form Validation Details
 
-- **Green Hosting Ready**: Optimized for carbon-neutral hosting
-- **Performance Optimized**: Minimal bundle size and fast loading
-- **Efficient Assets**: Compressed images and optimized resources
-- **Energy Conscious**: Reduced computational overhead
+* JavaScript-based client-side validation
+* Regex used for email:
 
-## 📱 Responsive Design
+```js
+/^[^\s@]+@[^\s@]+\.[^\s@]+$/
+```
 
-- **Mobile**: < 768px - Single column layout
-- **Tablet**: 768px - 1024px - Two column grid
-- **Desktop**: > 1024px - Full multi-column layout
-- **Large Screens**: > 1280px - Centered with max-width
+* Input fields must not be empty before submission
 
-## 🔧 Customization
+## 📹 (Optional) Walkthrough Video
 
-### Adding New Projects
-1. Update the `projects` array in `src/components/Projects.tsx`
-2. Include title, description, image URL, and technology tags
-3. Set `featured: true` for highlighted projects
+> You can include a Loom or screen recording here to showcase:
+>
+> * Section navigation
+> * 3D model interactions
+> * Form validation
+> * Mobile responsiveness
 
-### Modifying 3D Scene
-1. Edit `src/components/Hero.tsx`
-2. Customize geometries, materials, and animations
-3. Adjust camera position and lighting
+## 🧩 Accessibility & Best Practices
 
-### Updating Color Scheme
-1. Modify `tailwind.config.js` color definitions
-2. Update component classes to use new colors
-3. Ensure accessibility compliance
-
-## 🚀 Deployment
-
-### Netlify
-1. Build the project: `npm run build`
-2. Deploy the `dist` folder to Netlify
-3. Set up continuous deployment with Git integration
-
-### Vercel
-1. Connect your GitHub repository
-2. Vercel will auto-detect Vite configuration
-3. Deploy with zero configuration
-
-### GitHub Pages
-1. Install gh-pages: `npm install --save-dev gh-pages`
-2. Add deploy script to package.json
-3. Run: `npm run deploy`
-
-## 📊 Performance Optimizations
-
-- **Code Splitting**: Dynamic imports for better loading
-- **Image Optimization**: Compressed images from Pexels
-- **Tree Shaking**: Unused code elimination
-- **Bundle Analysis**: Optimized dependency management
-
-## ♿ Accessibility
-
-- **Keyboard Navigation**: Full keyboard support
-- **Screen Reader**: Proper ARIA labels and semantic HTML
-- **Color Contrast**: WCAG AA compliant ratios
-- **Focus Management**: Visible focus indicators
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes with proper documentation
-4. Test across different devices and browsers
-5. Submit a pull request
-
-## 📄 License
-
-This project is licensed under the MIT License. See LICENSE file for details.
-
-## 🌍 Environmental Impact
-
-This portfolio is designed with environmental consciousness:
-- Optimized for green hosting providers
-- Minimal resource consumption
-- Efficient rendering and animations
-- Sustainable development practices
+* Semantic HTML elements
+* `alt` tags for all images
+* Keyboard navigable form inputs and buttons
+* Mobile-first responsive design
+* Optimized performance with Vite
 
 ---
 
-Built with 💚 for a sustainable digital future.
+## 🙌 Acknowledgements
+
+* [React](https://reactjs.org/)
+* [Vite](https://vitejs.dev/)
+* [Tailwind CSS](https://tailwindcss.com/)
+* [Three.js](https://threejs.org/)
+* [Vercel](https://vercel.com/)
+
+---
+
+
+
+
