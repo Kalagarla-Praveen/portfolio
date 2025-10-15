@@ -11,13 +11,11 @@ const Projects: React.FC = () => {
       image: 'https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=800',
       tags: ['React', 'Three.js', 'TypeScript', 'WebGL'],
       category: 'frontend',
-<<<<<<< HEAD
       demoUrl: '#',
       githubUrl: 'https://github.com/Kalagarla-Praveen/portfolio',
-=======
-      demoUrl: 'https://drive.google.com/file/d/1AHffFYFZj56WyA9VQE_j2ra9KvUD3TdR/view?usp=sharing',
-      githubUrl: 'https://github.com/Kalagarla-Praveen/portfolio.git',
->>>>>>> 230a367cef1d1a836b2cd6d478a817351fc55dd2
+
+      
+
       featured: true,
       stats: { stars: 234, views: '12.5k', likes: 89 }
     },
