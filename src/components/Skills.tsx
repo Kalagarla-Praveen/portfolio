@@ -9,7 +9,7 @@ const Skills: React.FC = () => {
       color: 'from-blue-400 to-cyan-400',
       skills: [
         { name: 'React', level: 95, logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' },
-        { name: 'TypeScript', level: 90, logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg' },
+        
         { name: 'JavaScript', level: 95, logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg' },
         { name: 'HTML5', level: 98, logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg' },
         { name: 'CSS3', level: 92, logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg' },
@@ -26,7 +26,7 @@ const Skills: React.FC = () => {
         { name: 'MongoDB', level: 82, logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg' },
         { name: 'PostgreSQL', level: 80, logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg' },
         { name: 'Express.js', level: 85, logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg' },
-        { name: 'GraphQL', level: 75, logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg' },
+        
       ]
     },
    
@@ -39,8 +39,8 @@ const Skills: React.FC = () => {
        
         { name: 'AWS', level: 75, logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg' },
         { name: 'Vercel', level: 88, logo: 'https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=100&h=100' },
-        { name: 'Webpack', level: 80, logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webpack/webpack-original.svg' },
-        { name: 'Vite', level: 85, logo: 'https://images.pexels.com/photos/1181298/pexels-photo-1181298.jpeg?auto=compress&cs=tinysrgb&w=100&h=100' },
+       
+        {name:'VS Code',level:90,logo:'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/512px-Visual_Studio_Code_1.35_icon.svg.png'}
       ]
     }
   ];
@@ -132,7 +132,7 @@ const Skills: React.FC = () => {
               tools, and techniques to stay at the forefront of web development and creative technology.
             </p>
             <div className="flex flex-wrap justify-center gap-3 mt-6">
-              {['AI/ML', 'Web3', 'AR/VR', 'IoT', 'Blockchain', 'Cloud Computing'].map((tech, index) => (
+              {['AI/ML', 'Web3', 'AR/VR', 'IoT',  'Cloud Computing'].map((tech, index) => (
                 <span
                   key={index}
                   className="px-4 py-2 bg-gradient-to-r from-accent-400/20 to-orange-400/20 border border-accent-400/30 text-accent-400 rounded-full text-sm font-medium animate-pulse"

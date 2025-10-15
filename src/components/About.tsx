@@ -1,11 +1,12 @@
 import React from 'react';
-import { User, Heart, Coffee, Music, Camera, Gamepad2 } from 'lucide-react';
+import { User, Heart, BookOpen , Music, ShoppingCart, Gamepad2 } from 'lucide-react';
 
 const About: React.FC = () => {
   const interests = [
-    { icon: <Coffee className="h-6 w-6" />, name: 'Coffee Lover', color: 'from-amber-400 to-orange-500' },
-    { icon: <Music className="h-6 w-6" />, name: 'Music Producer', color: 'from-purple-400 to-pink-500' },
-    { icon: <Camera className="h-6 w-6" />, name: 'Photography', color: 'from-blue-400 to-cyan-500' },
+    
+    { icon: <ShoppingCart className="h-6 w-6" />, name: 'Shopping', color: 'from-amber-400 to-orange-500' },
+    { icon: <Music className="h-6 w-6" />, name: 'Music lover', color: 'from-purple-400 to-pink-500' },
+    { icon: <BookOpen  className="h-6 w-6" />, name: 'Continous Learning', color: 'from-blue-400 to-cyan-500' },
     { icon: <Gamepad2 className="h-6 w-6" />, name: 'Gaming', color: 'from-green-400 to-emerald-500' },
   ];
 
@@ -55,15 +56,14 @@ const About: React.FC = () => {
                 Turning Ideas Into <span className="text-accent-400">Reality</span>
               </h3>
               <p className="text-white/70 leading-relaxed text-lg">
-                With over 5 years of experience in full-stack development, I specialize in creating 
-                interactive web applications that combine beautiful design with powerful functionality. 
-                I'm passionate about emerging technologies and love experimenting with 3D graphics, 
-                AI integration, and creative coding.
+               I’m a final-year B.Tech student with a strong passion for full-stack development and machine learning. I enjoy building interactive and user-friendly web applications that not only look great but also deliver powerful functionality.
+
+My curiosity drives me to constantly explore new technologies—whether it’s crafting seamless front-end experiences, designing efficient back-end systems, or diving into the world of AI and data-driven solutions.
+
+
               </p>
               <p className="text-white/70 leading-relaxed text-lg">
-                When I'm not coding, you'll find me exploring new technologies, contributing to 
-                open-source projects, or working on creative side projects that push the boundaries 
-                of what's possible on the web.
+               Beyond academics, I actively work on projects that challenge me to learn, experiment, and grow. My goal is to combine my technical expertise with creativity to develop impactful applications that make a difference.
               </p>
             </div>
 

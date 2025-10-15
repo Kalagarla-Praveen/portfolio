@@ -12,65 +12,127 @@ const Projects: React.FC = () => {
       tags: ['React', 'Three.js', 'TypeScript', 'WebGL'],
       category: 'frontend',
       demoUrl: '#',
-      githubUrl: '#',
+      githubUrl: 'https://github.com/Kalagarla-Praveen/portfolio',
       featured: true,
       stats: { stars: 234, views: '12.5k', likes: 89 }
     },
+    {
+  title: 'Jobby App',
+  description: 'A responsive job search web application that allows users to browse job listings, apply filters by employment type and salary range, and view detailed job descriptions with authentication features.',
+  image: 'https://images.pexels.com/photos/3184287/pexels-photo-3184287.jpeg?auto=compress&cs=tinysrgb&w=800',
+  tags: ['React', 'JavaScript', 'REST API', 'CSS'],
+  category: 'frontend',
+  demoUrl: 'https://github.com/Kalagarla-Praveen/JobbyApp',
+  githubUrl: 'https://github.com/Kalagarla-Praveen/JobbyApp',
+  featured: true,
+  stats: { stars: 187, views: '9.8k', likes: 76 }
+},
+{
+  title: 'To-Do List App',
+  description: 'A task management web app that allows users to add, edit, mark as complete, and delete tasks, featuring persistent storage and a clean, responsive interface for better productivity.',
+  image: 'https://images.pexels.com/photos/4792285/pexels-photo-4792285.jpeg?auto=compress&cs=tinysrgb&w=800',
+  tags: ['JavaScript', 'CSS', 'LocalStorage'],
+  category: 'frontend',
+  demoUrl: 'praveentodo2.ccbp.tech',
+  githubUrl: 'praveentodo2.ccbp.tech',
+  featured: true,
+  stats: { stars: 158, views: '7.8k', likes: 68 }
+},
+
+{
+  title: 'Password Manager App',
+  description: 'A secure password management application that allows users to store, encrypt, and manage their passwords safely with features like search, copy to clipboard, and responsive UI design.',
+  image: 'https://images.pexels.com/photos/5380595/pexels-photo-5380595.jpeg?auto=compress&cs=tinysrgb&w=800',
+  tags: ['React', 'JavaScript', 'LocalStorage', 'CSS'],
+  category: 'frontend',
+  demoUrl: 'password6165.ccbp.tech',
+  githubUrl: '#',
+  featured: true,
+  stats: { stars: 162, views: '8.4k', likes: 71 }
+},{
+  title: 'Comments App',
+  description: 'An interactive comments application that allows users to add, edit, and delete comments dynamically, featuring real-time updates and a clean, responsive UI for a seamless experience.',
+  image: 'https://images.pexels.com/photos/1181352/pexels-photo-1181352.jpeg?auto=compress&cs=tinysrgb&w=800',
+  tags: ['React', 'JavaScript', 'CSS', 'LocalStorage'],
+  category: 'frontend',
+  demoUrl: 'https://github.com/Kalagarla-Praveen/CommentsApp',
+  githubUrl: 'https://github.com/Kalagarla-Praveen/CommentsApp',
+  featured: true,
+  stats: { stars: 143, views: '7.6k', likes: 65 }
+},{
+  title: 'BMI Calculator App',
+  description: 'A simple and responsive BMI Calculator that helps users calculate their Body Mass Index based on height and weight inputs, providing instant health category feedback with a clean UI.',
+  image: 'https://images.pexels.com/photos/669577/pexels-photo-669577.jpeg?auto=compress&cs=tinysrgb&w=800',
+  tags: ['React', 'JavaScript', 'CSS', 'Bootstrap'],
+  category: 'frontend',
+  demoUrl: 'bmi6165.ccbp.tech',
+  githubUrl: 'bmi6165.ccbp.tech',
+  featured: true,
+  stats: { stars: 128, views: '6.9k', likes: 59 }
+},
+{
+  title: 'Canvas Studio App',
+  description: 'A creative drawing application that allows users to sketch, erase, and customize colors and brush sizes using the HTML5 Canvas API, offering an interactive and smooth drawing experience.',
+  image: 'https://images.pexels.com/photos/4144096/pexels-photo-4144096.jpeg?auto=compress&cs=tinysrgb&w=800',
+  tags: ['React', 'JavaScript', 'HTML5 Canvas', 'Tailwind CSS'],
+  category: 'frontend',
+  demoUrl: 'https://canvas-studio-app.vercel.app/',
+  githubUrl: 'https://github.com/Kalagarla-Praveen/canvas-studio-app',
+  featured: true,
+  stats: { stars: 151, views: '7.2k', likes: 63 }
+},
+
+{
+  title: 'Project Cost Tracker',
+  description: 'A real-time expense tracking application that allows users to record, update, and visualize project costs using Firebase for authentication and data storage, ensuring seamless cloud synchronization.',
+  image: 'https://images.pexels.com/photos/669610/pexels-photo-669610.jpeg?auto=compress&cs=tinysrgb&w=800',
+  tags: ['React', 'Firebase', 'JavaScript', 'CSS'],
+  category: 'fullstack',
+  demoUrl: 'https://project-cost-tracker-firebase-auth.vercel.app/',
+  githubUrl: 'https://github.com/Kalagarla-Praveen/project-cost-tracker-firebase-auth',
+  featured: true,
+  stats: { stars: 176, views: '8.9k', likes: 74 }
+},
+{
+  title: 'Crop Recommendation System',
+  description: 'A machine learning-based web application that recommends the most suitable crop for cultivation based on soil nutrients, temperature, humidity, and rainfall data, helping farmers make data-driven decisions.',
+  image: 'https://images.pexels.com/photos/533982/pexels-photo-533982.jpeg?auto=compress&cs=tinysrgb&w=800',
+  tags: ['Python', 'Machine Learning', 'Flask', 'Pandas'],
+  category: 'ml',
+  demoUrl: 'https://github.com/Kalagarla-Praveen/crop_recommendation-project',
+  githubUrl: 'https://github.com/Kalagarla-Praveen/crop_recommendation-project',
+  featured: true,
+  stats: { stars: 192, views: '9.3k', likes: 78 }
+}
+,
+
+
+
+
     {
       title: 'AI-Powered Chat Application',
       description: 'Real-time chat application with AI integration, featuring smart replies, sentiment analysis, and beautiful animations.',
       image: 'https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=800',
       tags: ['Next.js', 'OpenAI', 'Socket.io', 'MongoDB'],
       category: 'fullstack',
-      demoUrl: '#',
-      githubUrl: '#',
+      demoUrl: 'praveen6165ai.ccbp.tech',
+      githubUrl: 'praveen6165ai.ccbp.tech',
       featured: true,
       stats: { stars: 189, views: '8.7k', likes: 67 }
     },
     {
-      title: 'E-commerce Dashboard',
+      title: 'E-commerce Application',
       description: 'Modern admin dashboard with advanced analytics, real-time data visualization, and comprehensive inventory management.',
       image: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800',
-      tags: ['Vue.js', 'D3.js', 'Express', 'PostgreSQL'],
+      tags: ['React.js', 'Node,js', 'Express', 'SQlite','Tailwind CSS'],
       category: 'fullstack',
       demoUrl: '#',
       githubUrl: '#',
       featured: true,
       stats: { stars: 156, views: '6.2k', likes: 45 }
-    },
-    {
-      title: 'Creative Design System',
-      description: 'Comprehensive design system with interactive components, documentation, and automated testing for consistent UI/UX.',
-      image: 'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800',
-      tags: ['Storybook', 'React', 'Figma', 'Jest'],
-      category: 'design',
-      demoUrl: '#',
-      githubUrl: '#',
-      featured: false,
-      stats: { stars: 98, views: '4.1k', likes: 32 }
-    },
-    {
-      title: 'Mobile Fitness App',
-      description: 'Cross-platform fitness tracking app with workout plans, progress tracking, and social features for motivation.',
-      image: 'https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=800',
-      tags: ['React Native', 'Firebase', 'Redux', 'Expo'],
-      category: 'mobile',
-      demoUrl: '#',
-      githubUrl: '#',
-      featured: false,
-      stats: { stars: 145, views: '7.3k', likes: 78 }
-    },
-    {
-      title: 'Blockchain Voting System',
-      description: 'Secure and transparent voting platform built on blockchain technology with smart contracts and real-time results.',
-      image: 'https://images.pexels.com/photos/1181677/pexels-photo-1181677.jpeg?auto=compress&cs=tinysrgb&w=800',
-      tags: ['Solidity', 'Web3.js', 'React', 'Ethereum'],
-      category: 'blockchain',
-      demoUrl: '#',
-      githubUrl: '#',
-      featured: false,
-      stats: { stars: 267, views: '15.2k', likes: 123 }
     }
+    
+   
   ];
 
   const categories = [

@@ -10,10 +10,7 @@ const Header: React.FC<HeaderProps> = ({ activeSection }) => {
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-    };
-
+    const handleScroll = () => setIsScrolled(window.scrollY > 50);
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
@@ -34,54 +31,6 @@ const Header: React.FC<HeaderProps> = ({ activeSection }) => {
     setIsMenuOpen(false);
   };
 
-  const downloadResume = () => {
-    // Create a sample resume download
-    const resumeContent = `
-JOHN DOE - FULL STACK DEVELOPER
-================================
-
-CONTACT INFORMATION
-Email: john.doe@email.com
-Phone: +1 (555) 123-4567
-LinkedIn: linkedin.com/in/johndoe
-GitHub: github.com/johndoe
-
-SUMMARY
-Passionate Full Stack Developer with 5+ years of experience in creating innovative web applications and interactive experiences. Specialized in React, Node.js, and 3D web technologies.
-
-TECHNICAL SKILLS
-• Frontend: React, TypeScript, JavaScript, HTML5, CSS3, Tailwind CSS
-• Backend: Node.js, Express, Python, PHP
-• Databases: MongoDB, PostgreSQL, MySQL
-• 3D Graphics: Three.js, WebGL, Blender
-• Tools: Git, Docker, AWS, Figma
-
-EXPERIENCE
-Senior Full Stack Developer | Tech Company (2021-Present)
-• Developed 20+ responsive web applications using React and Node.js
-• Implemented 3D visualizations increasing user engagement by 40%
-• Led a team of 5 developers on multiple projects
-
-EDUCATION
-Bachelor of Computer Science | University Name (2018)
-
-PROJECTS
-• Interactive 3D Portfolio - Personal portfolio with Three.js animations
-• E-commerce Platform - Full-stack application with payment integration
-• Data Visualization Dashboard - Real-time analytics with D3.js
-    `;
-
-    const blob = new Blob([resumeContent], { type: 'text/plain' });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = 'John_Doe_Resume.txt';
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-    URL.revokeObjectURL(url);
-  };
-
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
@@ -92,6 +41,7 @@ PROJECTS
     >
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
+          {/* Logo */}
           <div className="flex items-center space-x-2 animate-slide-right">
             <div className="relative">
               <Rocket className="h-8 w-8 text-accent-400 animate-bounce-slow" />
@@ -100,7 +50,7 @@ PROJECTS
               </div>
             </div>
             <span className="text-xl font-bold bg-gradient-to-r from-accent-400 to-orange-400 bg-clip-text text-transparent">
-              Your Portfolio
+              Praveen Kalagarla
             </span>
           </div>
 
@@ -117,28 +67,36 @@ PROJECTS
                 }`}
               >
                 {item.name}
-                <span className={`absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-accent-400 to-orange-400 transition-all duration-300 group-hover:w-full ${
-                  activeSection === item.href.replace('#', '') ? 'w-full' : ''
-                }`} />
+                <span
+                  className={`absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-accent-400 to-orange-400 transition-all duration-300 group-hover:w-full ${
+                    activeSection === item.href.replace('#', '')
+                      ? 'w-full'
+                      : ''
+                  }`}
+                />
               </button>
             ))}
-            <button
-              onClick={downloadResume}
+
+            {/* ✅ Download Resume Button */}
+            <a
+              href="/Praveen_Kalagarla_Resume.pdf"
+              download="Praveen_Kalagarla_Resume.pdf"
               className="flex items-center space-x-2 px-4 py-2 bg-gradient-to-r from-primary-500 to-purple-500 text-white rounded-full font-medium hover:from-primary-600 hover:to-purple-600 transition-all duration-300 transform hover:scale-105 hover:shadow-lg animate-glow"
             >
               <Download className="h-4 w-4" />
               <span>Resume</span>
-            </button>
+            </a>
           </div>
 
-          {/* Mobile menu button */}
+          {/* Mobile Buttons */}
           <div className="md:hidden flex items-center space-x-4">
-            <button
-              onClick={downloadResume}
+            <a
+              href="/Praveen_Kalagarla_Resume.pdf"
+              download="Praveen_Kalagarla_Resume.pdf"
               className="p-2 bg-gradient-to-r from-primary-500 to-purple-500 text-white rounded-full hover:from-primary-600 hover:to-purple-600 transition-all duration-300"
             >
               <Download className="h-4 w-4" />
-            </button>
+            </a>
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="text-white/80 hover:text-accent-400 transition-colors"
